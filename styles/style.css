@@ -14,11 +14,12 @@ body {
   }
   
   .hero-image {
-    background: url(https://res.cloudinary.com/dd8esjoco/image/upload/v1675643708/brycek2_j0kdmb.jpg) no-repeat center; 
+    background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675651309/brycek2_jcujwc.png) repeat center; 
     background-size: auto;
     background-position: center;
-    height: 500px;
+    height: 800px;
     position: relative;
+    object-fit: scale-down;
   }
 
 
