@@ -14,8 +14,8 @@ body {
   }
   
   .hero-image {
-    background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675651309/brycek2_jcujwc.png) repeat center; 
-    background-size: auto;
+    background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675652144/brycek2_jcujwc.png) no-repeat center; 
+    background-size: 100% 100%;
     background-position: center;
     height: 800px;
     position: relative;
@@ -30,6 +30,11 @@ body {
     line-height: 92%;
     letter-spacing: -.02em;
     text-transform: lowercase;
+  }
+
+  .hotLinks{
+    object-position: bottom center;
+    width: auto;
   }
 
   import Lenis from "@studio-freight/lenis"
