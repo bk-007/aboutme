@@ -6,10 +6,6 @@
     font-style: normal;
   }
   
-  img {
-    max-width: 100%;
-    display: block;
-  }
   
   body {
     text-align: center;
@@ -19,22 +15,22 @@
     } 
   
    
-  .hero-image {
-        background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675656571/brycek2_jcujwc_1841d0.png) no-repeat center; 
-        background-size: 100% 100%;
-        background-position: center;
-        height: 450px;
-        position: relative;
-        object-fit: scale-down;
-      }
+    .hero-image {
+      background: none; 
+      background-size: 100% 100%;
+      background-position: center;
+      height: max-content;
+      position: relative;
+      object-fit: contain;
+    }
   
     p {
-      font-size: 5.361vw;
-      font-style: italic;
+      font-size: 8.361vw;
+      font-style: normal;
       font-weight: 900;
       line-height: 92%;
       letter-spacing: -.02em;
-      text-transform: lowercase;
+      text-transform: uppercase;
     }
   
     .hotLinks{
