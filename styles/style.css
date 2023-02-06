@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'pp_neue_montrealbold';
+  src: url('ppneuemontreal-bold-webfont.woff2') format('woff2'),
+       url('ppneuemontreal-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+  font-family: 'pp_neue_montrealbold';
+  text-size-adjust: auto;
+  font-size: 30px;
+  }
+  
+  .hero-image {
+    background: url(https://res.cloudinary.com/dd8esjoco/image/upload/v1675643708/brycek2_j0kdmb.jpg) no-repeat center; 
+    background-size: auto;
+    background-position: center;
+    height: 500px;
+    position: relative;
+  }
+
+
+  p {
+    font-size: 5.361vw;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 92%;
+    letter-spacing: -.02em;
+    text-transform: lowercase;
+  }
+
+  import Lenis from "@studio-freight/lenis"
+
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+  direction: 'vertical', // vertical, horizontal
+  gestureDirection: 'vertical', // vertical, horizontal, both
+  smooth: true,
+  mouseMultiplier: 1,
+  smoothTouch: false,
+  touchMultiplier: 2,
+  infinite: false,
+})
+
+//get scroll value
+lenis.on('scroll' => {
+  console.log(scroll)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
