@@ -6,6 +6,11 @@
   font-style: normal;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 body {
   text-align: center;
   font-family: 'pp_neue_montrealbold';
@@ -13,7 +18,10 @@ body {
   font-size: 30px;
   }
   
-  .hero-image {
+
+  
+
+.hero-image {
     background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675652144/brycek2_jcujwc.png) no-repeat center; 
     background-size: 100% 100%;
     background-position: center;
@@ -21,9 +29,12 @@ body {
     position: relative;
     object-fit: scale-down;
   }
+  @media (min-width: 768px) {
+    background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675652144/brycek2_jcujwc.png') no-repeat center top;
+  }
+ 
 
-
-  p {
+  .hero-text {
     font-size: 5.361vw;
     font-style: italic;
     font-weight: 900;
@@ -36,30 +47,4 @@ body {
     object-position: bottom center;
     width: auto;
   }
-
-  import Lenis from "@studio-freight/lenis"
-
-const lenis = new Lenis({
-  duration: 1.2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-  direction: 'vertical', // vertical, horizontal
-  gestureDirection: 'vertical', // vertical, horizontal, both
-  smooth: true,
-  mouseMultiplier: 1,
-  smoothTouch: false,
-  touchMultiplier: 2,
-  infinite: false,
-})
-
-//get scroll value
-lenis.on('scroll' => {
-  console.log(scroll)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
 
