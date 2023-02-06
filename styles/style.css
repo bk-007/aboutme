@@ -16,25 +16,19 @@ body {
   font-family: 'pp_neue_montrealbold';
   text-size-adjust: auto;
   font-size: 30px;
-  }
-  
+  } 
 
-  
-
-.hero-image {
-    background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675652144/brycek2_jcujwc.png) no-repeat center; 
-    background-size: 100% 100%;
-    background-position: center;
-    height: 800px;
-    position: relative;
-    object-fit: scale-down;
-  }
-  @media (min-width: 768px) {
-    background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675652144/brycek2_jcujwc.png') no-repeat center top;
-  }
  
+.hero-image {
+      background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675652144/brycek2_jcujwc.png) no-repeat center; 
+      background-size: 100% 100%;
+      background-position: center;
+      height: 800px;
+      position: relative;
+      object-fit: scale-down;
+    }
 
-  .hero-text {
+  p {
     font-size: 5.361vw;
     font-style: italic;
     font-weight: 900;
