@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'pp_neue_montrealbold';
+    src: url('ppneuemontreal-bold-webfont.woff2') format('woff2'),
+         url('ppneuemontreal-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  body {
+    text-align: center;
+    font-family: 'pp_neue_montrealbold';
+    text-size-adjust: auto;
+    font-size: 30px;
+    } 
+  
+   
+  .hero-image {
+        background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675656571/brycek2_jcujwc_1841d0.png) no-repeat center; 
+        background-size: 100% 100%;
+        background-position: center;
+        height: 450px;
+        position: relative;
+        object-fit: scale-down;
+      }
+  
+    p {
+      font-size: 5.361vw;
+      font-style: italic;
+      font-weight: 900;
+      line-height: 92%;
+      letter-spacing: -.02em;
+      text-transform: lowercase;
+    }
+  
+    .hotLinks{
+      object-position: bottom center;
+      width: auto;
+    }
+  
+  
