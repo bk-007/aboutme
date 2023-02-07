@@ -19,13 +19,15 @@ body {
   } 
 
  
+
 .hero-image {
-      background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675652144/brycek2_jcujwc.png) no-repeat center; 
+      background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/c_scale,w_2492/v1675746049/ryunosuke-kikuno-zE-MrTmjzd4-unsplash_hsvrki.jpg) no-repeat center; 
       background-size: 100% 100%;
       background-position: center;
       height: 600px;
       position: relative;
       object-fit: cover;
+      padding: auto;
     }
 
   p {
@@ -34,11 +36,14 @@ body {
     font-weight: 900;
     line-height: 92%;
     letter-spacing: -.02em;
-    text-transform: lowercase;
+    position: relative;
+    padding: 0px;
+    word-wrap: break-word;
   }
 
   .hotLinks{
-    object-position: bottom center;
+    object-position: center;
     width: auto;
+    height: auto;
   }
 
