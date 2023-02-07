@@ -17,18 +17,17 @@ body {
   text-size-adjust: auto;
   font-size: 30px;
   } 
-
  
 
-.hero-image {
-      background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/c_scale,w_2492/v1675746049/ryunosuke-kikuno-zE-MrTmjzd4-unsplash_hsvrki.jpg) no-repeat center; 
-      background-size: 100% 100%;
-      background-position: center;
-      height: 600px;
-      position: relative;
-      object-fit: cover;
-      padding: auto;
-    }
+  .lottie1 {
+    height: 50%;
+    position: relative;
+    object-fit: cover;
+    padding: auto;
+    height: max-content;
+    position: relative;
+    object-fit: contain;
+  }
 
   p {
     font-size: 5.361vw;

@@ -14,12 +14,12 @@
     text-size-adjust: auto;
     font-size: 30px;
     } 
-  
    
-    .hero-image {
-      background: url(https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675746604/ryunosuke-kikuno-zE-MrTmjzd4-unsplash_hsvrki_7739ac.jpg);
-      background-size: contain;
-      background-position: center;
+    .lottie1 {
+      height: 50%;
+      position: relative;
+      object-fit: cover;
+      padding: auto;
       height: max-content;
       position: relative;
       object-fit: contain;
