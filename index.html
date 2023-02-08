@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"></html>
   
   <head>
 
-  <link rel="stylesheet" media="screen and (min-width: 401px)" href="styles\style.css">
-  <link rel="stylesheet" media="screen and (max-width: 400px)" href="styles\smallStyle.css">
+  <link rel="stylesheet" media="screen and (min-width: 500px)" href="styles\style.css">
+
+  <link rel="stylesheet" media="screen and (max-width: 499px)" href="styles\smallStyle.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   <link rel="stylesheet" media="(prefers-color-scheme:light)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css">
 
   <link rel="stylesheet" media="(prefers-color-scheme:dark)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/dark.css" onload="document.documentElement.classList.add('sl-theme-dark');">
@@ -21,6 +23,7 @@
 
   <title>A Website by Bryce</title>
 
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="content-language" content="en">
   <meta name='locale' content='en'/>
@@ -51,24 +54,22 @@
     
     <lottie-player
       src="json\welcome.json"
-      background="transparent" speed="1" loop autoplay
+      background="transparent" speed="1.5" loop autoplay
       style="width: 100%; height: 100%"></lottie-player>
     </div>
 
       <p class="animate__animated animate__lightSpeedInLeft">Find me at the links below</p>
     
       
+          <div class="hotLinks">
+              <sl-button-group label="Alignment">
+              <sl-icon-button name="linkedin" label="LinkedIn" href="https://www.linkedin.com/in/brycek/" target="_blank"></sl-icon-button>
+              <sl-icon-button name="github" label="Broken Code" href="https://github.com/bk-007" target="_blank"></sl-icon-button>
+              <sl-icon-button name="instagram" label="DM Sliding" href="https://www.instagram.com/guaconallthethings/" target="_blank"></sl-icon-button>
+            </sl-button-group>
 
-<div class="hotLinks">
-  <sl-button-group label="Alignment">
-    <sl-icon-button name="linkedin" label="LinkedIn" href="https://www.linkedin.com/in/brycek/" target="_blank"></sl-icon-button>
-    <sl-icon-button name="github" label="Broken Code" href="https://github.com/bk-007" target="_blank"></sl-icon-button>
-    <sl-icon-button name="instagram" label="DM Sliding" href="https://www.instagram.com/guaconallthethings/" target="_blank"></sl-icon-button>
-  </sl-button-group>
+            </div>
 
-</div>
-</div>
-</div>
   </body>
   
 </html>
