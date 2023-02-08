@@ -17,20 +17,6 @@
 
     <script src="https://kit.fontawesome.com/88a2056623.js" crossorigin="anonymous"></script>
     
-    <script type="module">
-      import { registerIconLibrary } from '/dist/utilities/icon-library.js';
-    
-      registerIconLibrary('unicons', {
-        resolver: name => {
-          const match = name.match(/^(.*?)(-s)?$/);
-          return `https://cdn.jsdelivr.net/npm/@iconscout/unicons@3.0.3/svg/${match[2] === '-s' ? 'solid' : 'line'}/${
-            match[1]
-          }.svg`;
-        },
-        mutator: svg => svg.setAttribute('fill','currentColor')
-      });
-    </script>
-    
     
 
   <title>A Website by Bryce</title>
@@ -72,24 +58,11 @@
       
       
         <div class="hotLinks">
-
-            <div class="icon-github">
-            <a onclick="https://github.com/bk-007">
-              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="json\github.json" background="" speed="1" loop autoplay style="size: 3vw;"></lottie-player></a>
-            </div>
-
-            <div class="icon-linkedin">
-            <a onclick="https://www.linkedin.com/in/brycek/">
-              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="json\linkedin.json" background="" speed="1" loop autoplay style="size: 3vw"></lottie-player></a>
-            </div>
-
-            <div class="icon-instagram">
-            <a onclick="https://www.instagram.com/guaconallthethings/">
-              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="json\ig.json" background="" speed="1" loop autoplay style="size: 3vw"></lottie-player></a>
-            </div>
+          <sl-button-group label="Alignment" style="font-size: 3.5vw;">
+            <sl-icon-button name="linkedin" label="LinkedIn" href="https://www.linkedin.com/in/brycek/" target="_blank"></sl-icon-button>
+            <sl-icon-button name="github" label="Broken Code" href="https://github.com/bk-007" target="_blank"></sl-icon-button>
+            <sl-icon-button name="instagram" label="DM Sliding" href="https://www.instagram.com/guaconallthethings/" target="_blank"></sl-icon-button>
+          </sl-button-group>
         </div>
 
             
