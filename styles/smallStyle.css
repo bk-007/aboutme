@@ -5,7 +5,7 @@
     font-weight: 700;
     font-style: normal;
   }
-  
+
   
   body,
   html {
@@ -17,6 +17,7 @@
     align-items: center;
     flex-direction: column;
   }
+
   body {
     text-align: center;
     font-family: 'pp_neue_montrealbold';
@@ -25,6 +26,16 @@
     overflow: hidden;
     } 
    
+    p {
+      font-size: 8.361vw;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 92%;
+      letter-spacing: -.02em;
+      text-transform: uppercase;
+      word-wrap: break-word;
+    }
+
     .main1 {
       height: 50%;
       position: relative;
@@ -35,15 +46,7 @@
       object-fit: contain;
     }
   
-    p {
-      font-size: 8.361vw;
-      font-style: normal;
-      font-weight: 900;
-      line-height: 92%;
-      letter-spacing: -.02em;
-      text-transform: uppercase;
-      word-wrap: break-word;
-    }
+    
   
     .hotLinks{
       object-position: bottom center;
