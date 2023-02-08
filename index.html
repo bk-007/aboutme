@@ -27,7 +27,7 @@
             match[1]
           }.svg`;
         },
-        mutator: svg => svg.setAttribute('fill', 'currentColor')
+        mutator: svg => svg.setAttribute('fill','currentColor')
       });
     </script>
     
@@ -64,22 +64,32 @@
     <div class="main1">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     
-    <lottie-player
-      src="json\welcome.json"
-      background="transparent" speed="1.5" loop autoplay
-      style="width: 100%; height: 100%"></lottie-player>
+    <lottie-player src="json\welcome.json" background="transparent" speed="1.5" loop autoplay style="width: 100%; height: 100%"></lottie-player>
     </div>
 
       <p class="animate__animated animate__lightSpeedInLeft">Find me at the links below</p>
     
       
       
-          <div class="hotLinks">
-              <sl-button-group label="Alignment" style="font-size: 3.5vw;">
-              <sl-icon-button library="unicons" name="linkedin-alt" label="LinkedIn" href="https://www.linkedin.com/in/brycek/" target="_blank"></sl-icon-button>
-              <sl-icon-button library="unicons" name="github-alt" label="Broken Code" href="https://github.com/bk-007" target="_blank"></sl-icon-button>
-              <sl-icon-button library="unicons" name="instagram" label="DM Sliding" href="https://www.instagram.com/guaconallthethings/" target="_blank"></sl-icon-button>
-            </sl-button-group>
+        <div class="hotLinks">
+            <div class="githubButton">
+            <a xlink:href="https://github.com/bk-007">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="json\github.json" background="transparent" speed="1" loop autoplay style="width: 20%; height: 20%"></lottie-player></a>
+          </div>
+
+          <div class="linkedinButton">
+            <a xlink:href="https://www.linkedin.com/in/brycek/">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="json\linkedin.json" background="transparent" speed="1" loop autoplay style="width: 20%; height: 20%"></lottie-player></a>
+          </div>
+
+          <div class="instagramButton"></div>
+            <a xlink:href="https://www.instagram.com/guaconallthethings/">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="json\ig.json" background="transparent" speed="1" loop autoplay style="width: 20%; height: 20%"></lottie-player></a>
+            </div>
+          </div>
 
             </div>
 
