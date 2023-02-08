@@ -17,7 +17,19 @@
 
     <script src="https://kit.fontawesome.com/88a2056623.js" crossorigin="anonymous"></script>
     
-
+    <script type="module">
+      import { registerIconLibrary } from '/dist/utilities/icon-library.js';
+    
+      registerIconLibrary('unicons', {
+        resolver: name => {
+          const match = name.match(/^(.*?)(-s)?$/);
+          return `https://cdn.jsdelivr.net/npm/@iconscout/unicons@3.0.3/svg/${match[2] === '-s' ? 'solid' : 'line'}/${
+            match[1]
+          }.svg`;
+        },
+        mutator: svg => svg.setAttribute('fill', 'currentColor')
+      });
+    </script>
     
     
 
@@ -61,11 +73,12 @@
       <p class="animate__animated animate__lightSpeedInLeft">Find me at the links below</p>
     
       
+      
           <div class="hotLinks">
-              <sl-button-group label="Alignment">
-              <sl-icon-button name="linkedin" label="LinkedIn" href="https://www.linkedin.com/in/brycek/" target="_blank"></sl-icon-button>
-              <sl-icon-button name="github" label="Broken Code" href="https://github.com/bk-007" target="_blank"></sl-icon-button>
-              <sl-icon-button name="instagram" label="DM Sliding" href="https://www.instagram.com/guaconallthethings/" target="_blank"></sl-icon-button>
+              <sl-button-group label="Alignment" style="font-size: 3.5vw;">
+              <sl-icon-button library="unicons" name="linkedin-alt" label="LinkedIn" href="https://www.linkedin.com/in/brycek/" target="_blank"></sl-icon-button>
+              <sl-icon-button library="unicons" name="github-alt" label="Broken Code" href="https://github.com/bk-007" target="_blank"></sl-icon-button>
+              <sl-icon-button library="unicons" name="instagram" label="DM Sliding" href="https://www.instagram.com/guaconallthethings/" target="_blank"></sl-icon-button>
             </sl-button-group>
 
             </div>
