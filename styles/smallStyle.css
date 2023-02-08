@@ -13,9 +13,10 @@
     font-family: 'pp_neue_montrealbold';
     text-size-adjust: auto;
     font-size: 30px;
+    overflow: hidden;
     } 
    
-    .lottie1 {
+    .main1 {
       height: 50%;
       position: relative;
       object-fit: cover;
