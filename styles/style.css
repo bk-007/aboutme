@@ -30,20 +30,7 @@ body {
       padding: auto;
   }
 
-
-  h2 {
-    font-size: 7.361vw;
-    font-style: italic;
-    font-weight: 900;
-    line-height: 92%;
-    letter-spacing: -.02em;
-    position: relative;
-    padding: 0px;
-    word-wrap: break-word;
-    overflow: hidden;
-  }
-
-  p {
+  h4 {
     font-size: 5.361vw;
     font-style: italic;
     font-weight: 900;
@@ -53,6 +40,7 @@ body {
     padding: 0px;
     word-wrap: break-word;
     overflow: hidden;
+    top: 0px;  
   }
 
   .hotLinks{
