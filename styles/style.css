@@ -31,6 +31,18 @@ body {
   }
 
 
+  h2 {
+    font-size: 7.361vw;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 92%;
+    letter-spacing: -.02em;
+    position: relative;
+    padding: 0px;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+
   p {
     font-size: 5.361vw;
     font-style: italic;

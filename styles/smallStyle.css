@@ -14,6 +14,16 @@
     overflow: hidden;
     } 
    
+    h2 {
+      font-size: 10.361vw;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 92%;
+      letter-spacing: -.02em;
+      text-transform: uppercase;
+      word-wrap: break-word;
+    }
+
     p {
       font-size: 8.361vw;
       font-style: normal;
@@ -25,8 +35,8 @@
     }
 
     .main1 {
-      max-width: 50%;
-      max-height: 50%;
+      max-width: 75%;
+      max-height: 75%;
         padding: auto;
     }
   
