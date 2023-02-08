@@ -13,13 +13,13 @@
     font-family: 'pp_neue_montrealbold';
     text-size-adjust: auto;
     font-size: 30px;
-    overflow: hidden;
+    
     } 
    
     .main1 {
+      object-position: top center;
       height: 50%;
       position: relative;
-      object-fit: cover;
       padding: auto;
       height: max-content;
       position: relative;
