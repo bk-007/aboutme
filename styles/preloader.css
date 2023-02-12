@@ -10,7 +10,6 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	background-color: #f1f1f2;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
@@ -37,16 +36,6 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-}
-
-.preloader-container .animation #skip {
-	color: #20495a;
-	cursor: pointer;
-	font-family: montserrat, sans-serif;
-	font-size: 1.75em;
-	position: absolute;
-	margin: 0 auto;
-	bottom: 20vh;
 }
 
 .hidden {
