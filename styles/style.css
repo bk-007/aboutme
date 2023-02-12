@@ -41,7 +41,7 @@ body {
   }
 
   .hotLinks{
-    object-position: bottom center;
+    object-position: center;
     overflow: hidden;
     padding: 0px;
   }
