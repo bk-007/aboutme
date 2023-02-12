@@ -8,6 +8,11 @@
 
 @import url(//fonts.googleapis.com/css?family=Vibur);
 
+.sl-button-group{
+  object-position: bottom center;
+  position: fixed;
+}
+
 .logo {
   text-align: center;
   width: 45%;
@@ -82,27 +87,6 @@ body {
   text-size-adjust: auto;
   font-size: 20px;
   } 
+
   
-  .main1, {
-    max-width: auto;
-    max-height: auto;
-  }
-
-  h4 {
-    font-size: 6.361vw;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 92%;
-    letter-spacing: -.02em;
-    position: relative;
-    word-wrap: break-word;
-    top: 0px;  
-    bottom: 0px;
-  }
-
-  .hotLinks{
-    object-position: bottom center;
-    overflow: hidden;
-    position: absolute;
-  }
 
