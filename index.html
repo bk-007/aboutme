@@ -3,6 +3,8 @@
   
   <head>
 
+  <link rel="stylesheet" href="styles\preloader.css">
+
   <link rel="stylesheet" media="screen and (min-width: 500px)" href="styles\style.css">
 
   <link rel="stylesheet" media="screen and (max-width: 499px)" href="styles\smallStyle.css">
@@ -18,6 +20,7 @@
     <script src="https://kit.fontawesome.com/88a2056623.js" crossorigin="anonymous"></script>
 
     <script src="jquery-2.1.4.js"></script>
+    <script src="js\preloader.js"></script>
     
     
   <title>This is my site, check it out!</title>
@@ -48,15 +51,17 @@
 
   <body>
 
-    <script src="js\preloader.js"></script>
-    <div class="preloader">
-      
-      <lottie-player src="json\boredhand.json" background="transparent" speed="1.5" loop autoplay style="width: 100%; height: 100%"></lottie-player>
-    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <div id="preloader" class="preloader-container">
+	      <div class="animation">
+		    <div class="player">
+			<lottie-player src="json\boredhand.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop controls autoplay></lottie-player>
+		</div>
+	</div>
+</div>
 
 
 
-    <div class="page-content">
     <div class="main1">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     
@@ -74,7 +79,7 @@
           </sl-button-group>
       
         </div>
-      </div>
+     
    
   </body>
   
