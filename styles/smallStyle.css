@@ -33,6 +33,9 @@
     
     .hotLinks{
       object-position: bottom center;
+      max-width: 25%;
+      max-height: 25%;
+        padding: auto;
     }
   
   
