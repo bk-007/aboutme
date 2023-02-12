@@ -16,16 +16,11 @@ body {
   height: auto;
 }
 
-
-
 body {
   text-align: center;
   font-family: 'pp_neue_montrealbold';
   text-size-adjust: auto;
   font-size: 20px;
-  overflow: hidden;
-  padding: auto;
-  flex: 1;
   } 
   
   .main1 {
@@ -43,9 +38,6 @@ body {
     word-wrap: break-word;
     top: 0px;  
     bottom: 0px;
-    overflow: hidden;
-    padding: auto;
-    flex: 1;
   }
 
   .hotLinks{
