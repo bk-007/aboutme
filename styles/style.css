@@ -14,22 +14,21 @@ body {
   text-size-adjust: auto;
   font-size: 30px;
   overflow: hidden;
+  padding: auto;
   } 
   
   .main1 {
     max-width: 100%;
     max-height: 100%;
-      padding: auto;
   }
 
   h4 {
     font-size: 8.361vw;
-    font-style: italic;
+    font-style: normal;
     font-weight: 900;
     line-height: 92%;
     letter-spacing: -.02em;
     position: relative;
-    padding: 0px;
     word-wrap: break-word;
     top: 0px;  
   }
