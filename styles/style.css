@@ -23,7 +23,7 @@ body {
   font-size: 20px;
   } 
   
-  .main1 {
+  .main1, .main2 {
     max-width: auto;
     max-height: auto;
   }
