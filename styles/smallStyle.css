@@ -1,3 +1,7 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'pp_neue_montrealbold';
     src: url('ppneuemontreal-bold-webfont.woff2') format('woff2'),
@@ -16,6 +20,12 @@
     top: 0;
     width: 100%;
     z-index: 9999;
+    transition: opacity 0.3s linear;
+  }
+
+  .page-content {
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   body {
