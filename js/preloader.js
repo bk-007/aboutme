@@ -1,14 +1,17 @@
-const preloader = document.querySelector('.preloader');
+let box = document.querySelector("#preloader"),
 
-const fadeEffect = setInterval(() => {
-  if (!preloader.style.opacity) {
-    preloader.style.opacity = 1;
-  }
-  if (preloader.style.opacity > 0) {
-    preloader.style.opacity -= 0.1;
-  } else {
-    clearInterval(fadeEffect);
-  }
-}, 200);
-
-window.addEventListener('load', fadeEffect);
+function fadeOut() {
+	box.classList.add("visuallyhidden");
+	box.addEventListener(
+		"transitionend",
+		function (e) {
+			box.classList.add("hidden");
+		},
+		{
+			capture: false,
+			once: true,
+			passive: false
+		}
+	);
+}
+setTimeout(fadeOut, 3000);
