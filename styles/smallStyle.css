@@ -33,6 +33,7 @@
     
     .hotLinks{
       object-position: bottom center;
+      align-items: center;
       max-width: 25%;
       max-height: 25%;
         padding: auto;
