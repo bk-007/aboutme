@@ -14,4 +14,4 @@ function fadeOut() {
 		}
 	);
 }
-setTimeout(fadeOut, 3000);
+setTimeout(fadeOut, 3);
