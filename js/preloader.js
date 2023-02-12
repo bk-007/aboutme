@@ -1,4 +1,4 @@
-let box = document.querySelector("#preloader"),
+let box = document.querySelector("#preloader")
 
 function fadeOut() {
 	box.classList.add("visuallyhidden");
