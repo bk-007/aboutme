@@ -1,6 +1,4 @@
-*, *::after, *::before {
-  box-sizing: border-box;
-}
+
 
 @font-face {
   font-family: 'pp_neue_montrealbold';
@@ -10,23 +8,15 @@
   font-style: normal;
 }
 
-.preloader {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-    transition: opacity 0.3s linear;
-  }
 
-  .page-content {
-    max-width: 768px;
-    margin: 0 auto;
-  }
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
 
 body {
   text-align: center;
