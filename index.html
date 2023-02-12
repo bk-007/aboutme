@@ -16,10 +16,11 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js"></script>
 
     <script src="https://kit.fontawesome.com/88a2056623.js" crossorigin="anonymous"></script>
-    
-    
 
-  <title>A Website by Bryce</title>
+    <script src="jquery-2.1.4.js"></script>
+    
+    
+  <title>This is my site, check it out!</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +47,23 @@
 
 
   <body>
-   
+    <div class="content">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <lottie-player src="json\boredhand.json" background="transparent" speed="1.5" loop autoplay style="width: 100%; height: 100%"></lottie-player>
+      
+    </div>
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load",function(){
+          $("content").fadeOut("slow");
+        });
+    </script>
+
     <div class="main1">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     
