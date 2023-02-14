@@ -18,7 +18,7 @@
     <script src="js\lenis.js"></script>
 
     <script src="js\loconative.js"></script>
-<script>(function () { var scroll = new LoconativeScroll();})();</script>
+    <script>(function () { var scroll = new LoconativeScroll();})();</script>
 
    
   <title>Bryce Koning</title>
@@ -65,7 +65,12 @@
   <body>
     
 
-    <div class="logo"><b>b<span>ry</span>c<span>e<span>MK</span></b></div>
+    <div class="lottie">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="json\welcome.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop autoplay></lottie-player>
+    </div>
+
+    <p>The name is Bryce and the links are below.</p>
   
         
           <sl-button-group label="Alignment" style="font-size: 3vw;">
@@ -76,7 +81,14 @@
       
         
 
-        
+          <script>
+            var Webflow = Webflow || [];
+            Webflow.push(function() {
+              window.addEventListener('resize', function() {
+                  window.Webflow.require("lottie").lottie.resize();
+              });	
+            });
+            </script>
   </body>
   
 </html>
