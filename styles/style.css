@@ -43,11 +43,22 @@ body {
   } 
 }
 
+@media only screen and (max-width: 480px) {
   .sl-button-group{
     object-position: bottom center;
     position: fixed;
     padding: 0px;
+    -webkit-text-size-adjust: auto;
+    }
   }
+
+  @media only screen and (min-width: 481px) {
+    .sl-button-group{
+      object-position: bottom center;
+      position: fixed;
+      padding: 0px;
+      }
+    }
   
   .lottie {
     object-position: center;
