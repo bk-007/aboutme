@@ -59,6 +59,25 @@
   <meta name="twitter:description" content="This is my site, check it out!">
   <meta name="twitter:image" content="https://res.cloudinary.com/dlo6pjmqi/image/upload/v1676181971/animation_300_gif.gif">
 
+  <script type="module">
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyDSIoT8zOYKjXyweNZ6E4Q-15eagopjves",
+      authDomain: "site1-e641e.firebaseapp.com",
+      projectId: "site1-e641e",
+      storageBucket: "site1-e641e.appspot.com",
+      messagingSenderId: "746966980498",
+      appId: "1:746966980498:web:b07e42eafa9396cc6c934b",
+      measurementId: "G-34L5HPE9RN"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
   </head>
 
 
