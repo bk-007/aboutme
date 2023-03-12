@@ -1,3 +1,3 @@
-![](https://github.com/bk-007/site24/blob/main/gifs/gif1.gif))
+![](https://github.com/bk-007/aboutme/blob/main/json/aboutanim.json))
 # Hello!
 This is my first site. Trying this out and updating frequently...stay tuned...
