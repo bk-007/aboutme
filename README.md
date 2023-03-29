@@ -1,3 +1,3 @@
-![](https://github.com/bk-007/site24/blob/main/gifs/gif1.gif)
+![](https://res.cloudinary.com/dlo6pjmqi/image/upload/v1678646865/animation_500_lf5qyarl_hxbg3d.gif)
 # Hello!
 This is my first site. Trying this out and updating frequently...stay tuned...
