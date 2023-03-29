@@ -3,12 +3,12 @@
     "short_name": "",
     "icons": [
         {
-            "src": "https://res.cloudinary.com/dlo6pjmqi/image/upload/v1680065425/android-chrome-192x192_tm9pr2.png",
+            "src": "images/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://res.cloudinary.com/dlo6pjmqi/image/upload/v1680065425/android-chrome-512x512_m34nzj.png",
+            "src": "images/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
