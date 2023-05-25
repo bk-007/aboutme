@@ -57,26 +57,41 @@
 
   <body>
 
-    <script>var loader = document.getElementsByClassName("bodymovin");
-      function loadBMAnimation(loader) {  
-        var animation = bodymovin.loadAnimation({   
-          container: loader,    
-          renderer: "lottie",    
-          loop: true,    
-          autoplay: true,   
-          path: "https://raw.githubusercontent.com/bk-007/aboutme/main/json/loading-paperplane.json"  });  loader.addEventListener("mouseenter", function() {    animation.play();  });  loader.addEventListener("mouseleave", function() {    animation.stop();  });}
-      for (var i = 0; i < loader.length; i++) {  loadBMAnimation(loader[i]);}
-      </script>
-
-    <div style="display:flex" class="pre-loader"><div class="bodymovin"></div></div>
-
-
-    <div class="lottie">
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      <lottie-player src="json\welcome.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop autoplay></lottie-player>
-    </div>
-
-    <h4 class="animate__animated animate__lightSpeedInRight">Hi I'm Bryce! Catch me below.</h4>
+    #wrap
+ #panels
+  %section.panel
+   %h1{"data-splitting" => "words"} Welcome to my site
+  
+  %section.panel
+   %h1{"data-splitting" => "words"} My name is Bryce
+   
+  %section.panel
+   %h1{"data-splitting" => "words"} I'm learning some coding
+   
+  %section.panel
+   %h1{"data-splitting" => "words"} A little data and AI stuff too
+   
+  %section.panel
+   %h1{"data-splitting" => "words"} Anyway... enjoy scrolling...
+   
+  %section.panel
+   %h1{"data-splitting" => "words"} Oh shoot there's more
+   
+  %section.panel
+   %h1{"data-splitting" => "words"} When does it end?
+   
+  %section.panel
+   %h1{"data-splitting" => "words"} Let me ask ChatGPT...
+   
+  %section.panel
+   %h1{"data-splitting" => "words"} ...it doesn't know.
+   
+  %section.panel
+   %h1{"data-splitting" => "words"} Find me below
+   
+  #backgrounds
+   -10.times do
+    .bg
   
         
           <sl-button-group label="Alignment" style="font-size: auto;">
@@ -86,18 +101,6 @@
             <sl-icon-button name="book-half" label="Adventures" href="https://www.goodreads.com/user/show/103351392-bryce-koning" target="_blank"></sl-icon-button>
           </sl-button-group>
 
-          
-      
-        
-
-          <script>
-            var Webflow = Webflow || [];
-            Webflow.push(function() {
-              window.addEventListener('resize', function() {
-                  window.Webflow.require("lottie").lottie.resize();
-              });	
-            });
-            </script>
   </body>
   
 </html>
