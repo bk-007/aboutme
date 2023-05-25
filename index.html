@@ -55,7 +55,9 @@
 
   </head>
 
-  <div style="display:flex" class="pre-loader"><div class="bodymovin"></div>
+  <body>
+
+    <div style="display:flex" class="pre-loader"><div class="bodymovin"></div></div>
 
   <script>var loader = document.getElementsByClassName("bodymovin");
     function loadBMAnimation(loader) {  
@@ -65,9 +67,8 @@
         loop: true,    
         autoplay: true,   
         path: "json\loading-paperplane.json"  });  loader.addEventListener("mouseenter", function() {    animation.play();  });  loader.addEventListener("mouseleave", function() {    animation.stop();  });}
-    for (var i = 0; i < loader.length; i++) {  loadBMAnimation(loader[i]);}</script>
-
-  <body>
+    for (var i = 0; i < loader.length; i++) {  loadBMAnimation(loader[i]);}
+    </script>
 
     
 
