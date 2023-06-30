@@ -16,6 +16,9 @@ body {
     display: flex;
     flex-direction: column;
   }
+  words {
+    object-position: top;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -29,9 +32,7 @@ body {
   font-size: 8.731vw;
   flex-wrap: wrap;
   } 
-  h4 {
-    object-position: top;
-  }
+  .
   sl-button-group{
     object-position: bottom center;
     position: fixed;
