@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  words {
+  .words {
     object-position: top;
   }
 }
@@ -29,11 +29,11 @@ body {
   text-transform: none;
   -webkit-text-size-adjust: auto;
   -webkit-box-align: center;
-  font-size: 8.731vw;
+  font-size: 5.731vw;
   flex-wrap: wrap;
   } 
-  .
-  sl-button-group{
+  
+  .butts{
     object-position: bottom center;
     position: fixed;
     padding: 0px;
@@ -52,18 +52,12 @@ body {
   font-size: 5.731vw;
   flex-wrap: wrap;
   } 
-  h4 {
-    object-position: top;
-  }
-  .sl-button-group{
-    object-position: bottom center;
-    position: fixed;
-    padding: 0px;
-    }
 }
   
   .lottie {
     object-position: center;
-    object-fit: cover;
+    object-fit: contain;
+    flex-wrap: wrap;
+    padding: 0px;
   }
 
