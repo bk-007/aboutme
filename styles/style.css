@@ -8,6 +8,36 @@ html {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+
 html,
 body {
   min-height: 100%;
@@ -36,8 +66,6 @@ body {
   -webkit-text-size-adjust: auto;
   -webkit-box-align: center;
   font-size: 7.731vw;
-  flex-wrap: wrap;
-  padding: 0%;
   } 
   
 }
@@ -50,8 +78,7 @@ body {
   -webkit-text-size-adjust: auto;
   -webkit-box-align: center;
   font-size: 5.731vw;
-  flex-wrap: wrap;
-  padding: 0%;
+  
   } 
 }
   
