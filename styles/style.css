@@ -34,17 +34,6 @@ html,
 body {
   min-height: 100%;
   height: auto;
-  -webkit-box-align: center;
-  .box {
-    display: flex;
-    flex-direction: column;
-  }
-  .buttons{
-    object-position: bottom center;
-    position: fixed;
-    padding: 0px;
-    -webkit-text-size-adjust: auto;
-    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -71,3 +60,15 @@ body {
   } 
 }
 
+.buttons{
+  object-position: bottom center;
+  position: fixed;
+  padding: 0px;
+  -webkit-text-size-adjust: auto;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex: 1;
+position: relative;
+  }
