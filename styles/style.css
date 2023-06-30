@@ -29,14 +29,6 @@ section {
   align-items: center;
 }
 
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
 
 html,
 body {
@@ -47,10 +39,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .words {
-    object-position: top;
-  }
-  .butts{
+  .buttons{
     object-position: bottom center;
     position: fixed;
     padding: 0px;
@@ -81,11 +70,4 @@ body {
   
   } 
 }
-  
-  .lottie {
-    object-position: center;
-    object-fit: fill;
-    flex-wrap: nowrap;
-    padding: 0px;
-  }
 
