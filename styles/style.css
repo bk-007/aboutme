@@ -20,18 +20,6 @@ body {
 section {
   height:100vh;
   width: 100vw;
-}
-
-.buttons{
-  object-position: bottom center;
-  position: relative;
-  padding: 0px;
-  -webkit-text-size-adjust: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: auto;
-  position: relative;
   font-size: auto;
-  }
+  -webkit-text-size-adjust: auto;
+}
