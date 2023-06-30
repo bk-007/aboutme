@@ -35,8 +35,9 @@ body {
   text-transform: none;
   -webkit-text-size-adjust: auto;
   -webkit-box-align: center;
-  font-size: 5.731vw;
+  font-size: 7.731vw;
   flex-wrap: wrap;
+  padding: 0%;
   } 
   
 }
@@ -50,13 +51,14 @@ body {
   -webkit-box-align: center;
   font-size: 5.731vw;
   flex-wrap: wrap;
+  padding: 0%;
   } 
 }
   
   .lottie {
     object-position: center;
-    object-fit: contain;
-    flex-wrap: wrap;
+    object-fit: fill;
+    flex-wrap: nowrap;
     padding: 0px;
   }
 
