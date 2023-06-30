@@ -3,6 +3,12 @@ html {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+html,
+body {
+  min-height: 100%;
+  height: max-content;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -10,12 +16,6 @@ section {
   align-items: center;
   flex: auto;
   position: relative;
-}
-
-html,
-body {
-  min-height: 100%;
-  height: auto;
 }
 
 .buttons{
