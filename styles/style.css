@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: initial;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 html,
@@ -19,20 +20,6 @@ body {
   .words {
     object-position: top;
   }
-}
-
-@media only screen and (max-width: 480px) {
-body {
-  text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
-  text-size-adjust: auto;
-  text-transform: none;
-  -webkit-text-size-adjust: auto;
-  -webkit-box-align: center;
-  font-size: 5.731vw;
-  flex-wrap: wrap;
-  } 
-  
   .butts{
     object-position: bottom center;
     position: fixed;
@@ -41,10 +28,22 @@ body {
     }
 }
 
+@media only screen and (max-width: 480px) {
+body {
+  text-align: center;
+  text-size-adjust: auto;
+  text-transform: none;
+  -webkit-text-size-adjust: auto;
+  -webkit-box-align: center;
+  font-size: 5.731vw;
+  flex-wrap: wrap;
+  } 
+  
+}
+
   @media only screen and (min-width: 481px) {
 body {
   text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
   text-size-adjust: auto;
   text-transform: none;
   -webkit-text-size-adjust: auto;
