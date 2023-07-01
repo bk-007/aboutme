@@ -20,8 +20,13 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-start; /* Align section to the top */
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  padding-top: 20px; /* Add some top padding to the section */
 }
 
 .background {
@@ -30,7 +35,46 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
-  background-color: #ffffff;
-  /* Additional styles for the background */
+  z-index: -1; /* Push the background behind the section */
+  background-color: #ffffff; /* Set your desired background color */
+}
+
+.avatar1 {
+  position: relative;
+  width: 120px; /* Adjust the size of the avatar for desktop */
+  height: 120px;
+  margin-top: 40px; /* Add some top margin to separate avatar from buttons */
+  z-index: 2; /* Position avatar above buttons */
+}
+
+.lottie-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.lottie-button {
+  /* Your button styles */
+  margin: 0 10px; /* Add some horizontal spacing between buttons */
+  cursor: pointer;
+  width: 40px; /* Adjust the size of the buttons for desktop */
+  height: 40px;
+}
+
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 767px) {
+  .avatar1 {
+    width: 80px; /* Adjust the size of the avatar for mobile */
+    height: 80px;
+    margin-top: 20px; /* Adjust the top margin for mobile */
+  }
+
+  .lottie-buttons {
+    margin-top: 10px; /* Adjust the top margin for mobile */
+  }
+
+  .lottie-button {
+    width: 30px; /* Adjust the size of the buttons for mobile */
+    height: 30px;
+  }
 }
