@@ -20,39 +20,29 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-section {
-  height: 100%;
-  width: 100%;
-}
-
-.loader {
+.background {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9999;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: -1;
+  background-color: #ffffff;
+  /* Additional styles for the background */
 }
 
-section {
-  height: 100%;
-  width: 100%;
-  position: relative;
+.profile-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
 }
 
 .profile-picture {
-  position: absolute;
-  top: 10px; /* Adjust the top position as needed */
-  left: 50%;
-  transform: translateX(-50%);
   width: 50px; /* Set the desired size for the profile picture */
   height: 50px;
   background-color: transparent; /* Placeholder background color */
@@ -62,14 +52,14 @@ section {
 
 .lottie-buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin-top: 70px; /* Adjust the top margin as needed */
+  margin-top: 10px; /* Adjust the top margin as needed */
 }
 
 .lottie-button {
   /* Your button styles */
-  margin: 10px;
+  margin: 0 10px;
   cursor: pointer;
   width: 50px; /* Set the desired size for the buttons */
   height: 50px;
@@ -78,17 +68,15 @@ section {
 /* Media query for screens smaller than 768px (mobile) */
 @media (max-width: 767px) {
   .profile-picture {
-    top: 5px; /* Adjust the top position for mobile */
     width: 40px; /* Adjust the size for mobile */
     height: 40px;
   }
 
   .lottie-buttons {
-    margin-top: 50px; /* Adjust the top margin for mobile */
+    margin-top: 5px; /* Adjust the top margin for mobile */
   }
 
   .lottie-button {
     width: 40px; /* Adjust the button size for mobile */
-    height: 40px;
   }
 }
