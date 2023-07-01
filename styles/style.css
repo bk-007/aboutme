@@ -34,30 +34,3 @@ body {
   background-color: #ffffff;
   /* Additional styles for the background */
 }
-
-.lottie-buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 10px; /* Adjust the top margin as needed */
-}
-
-.lottie-button {
-  /* Your button styles */
-  margin: 0 10px;
-  cursor: pointer;
-  width: 50px; /* Set the desired size for the buttons */
-  height: 50px;
-}
-
-/* Media query for screens smaller than 768px (mobile) */
-@media (max-width: 767px) {
-
-  .lottie-buttons {
-    margin-top: 5px; /* Adjust the top margin for mobile */
-  }
-
-  .lottie-button {
-    width: 40px; /* Adjust the button size for mobile */
-  }
-}
