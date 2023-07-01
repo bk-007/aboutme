@@ -42,13 +42,9 @@ section {
   align-items: center;
 }
 
-.animation {
-  display: block;
-}
-
 .animation,
 .lottie-buttons {
-  display: none;
+  display: block;
 }
 
 @media (min-width: 768px) {
