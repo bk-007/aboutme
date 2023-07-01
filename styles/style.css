@@ -41,13 +41,20 @@ body {
   }
 
   .animation,
-  .buttons {
+  .lottie-buttons {
     display: none;
   }
 
-  .buttons {
-    position: static;
-    font-size: 5vw; /* Change the font size for phones */
+  .lottie-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lottie-button {
+    flex: 1;
+    margin: 10px;
+    cursor: pointer;
   }
 }
 
@@ -72,7 +79,7 @@ body {
   }
 
   .animation,
-  .buttons {
+  .lottie-buttons {
     display: none;
   }
 
@@ -85,9 +92,15 @@ body {
     z-index: -1;
   }
 
-  .buttons {
-    position: absolute;
-    bottom: 10px;
-    font-size: 1.5vw; /* Change the font size for desktops */
+  .lottie-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lottie-button {
+    flex: 1;
+    margin: 10px;
+    cursor: pointer;
   }
 }
