@@ -67,6 +67,14 @@ section {
   flex: 0 0 auto; /* Prevent buttons from growing */
   margin: 10px;
   cursor: pointer;
-  width: 5vw; /* Set desired width */
-  height: 5vh; /* Set desired height */
+  width: 100px; /* Set desired width for desktop */
+  height: 40px; /* Set desired height for desktop */
+}
+
+/* Media query for mobile */
+@media (max-width: 767px) {
+  .lottie-button {
+    width: 80px; /* Set desired width for mobile */
+    height: 40px; /* Set desired height for mobile */
+  }
 }
