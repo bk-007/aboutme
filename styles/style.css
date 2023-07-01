@@ -58,14 +58,15 @@ section {
   height: 100%;
 }
 
-  .lottie-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.lottie-buttons {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+}
 
 .lottie-button {
-  flex: auto;
+  flex: 0 0 auto; /* Prevent buttons from growing */
   margin: 10px;
   cursor: pointer;
+  width: 5vw; /* Set desired width */
+  height: 5vh; /* Set desired height */
 }
