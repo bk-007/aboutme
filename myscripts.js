@@ -1,4 +1,3 @@
-// loader and background switcher based on screen size
 document.addEventListener("DOMContentLoaded", function() {
   // Select the loader and animation elements
   var loader = document.querySelector(".loader");
@@ -19,13 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
     buttons.style.display = "block";
   }
 
-  // Set the background animation source based on the device display size
-  function setAnimationSource() {
-    var backgroundAnimation = document.getElementById("background-animation");
-    var animationSource = window.innerWidth <= 767 ? "json/mobile-background.json" : "json/desktop-background.json";
-    backgroundAnimation.setAttribute("src", animationSource);
-  }
-
   // Simulate a loading delay (you can replace this with your own loading logic)
   function simulateLoading() {
     // Show the loader immediately
@@ -37,9 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
       hideLoader();
     }, 3000); // Adjust the delay time as needed
   }
-
-  // Call the setAnimationSource function to set the appropriate background animation
-  setAnimationSource();
 
   // Call the simulateLoading function to start the loading process
   simulateLoading();

@@ -47,22 +47,36 @@ section {
   display: block;
 }
 
-@media (min-width: 768px) {
-  .animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+/* Set the background animation */
+.animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Load the appropriate Lottie animation based on screen size */
+@media (max-width: 767px) {
+  .animation lottie-player {
+    background: url('json/mobile-background.json') center center / cover no-repeat;
   }
+}
+
+@media (min-width: 768px) {
+  .animation lottie-player {
+    background: url('json/desktop-background.json') center center / cover no-repeat;
+  }
+}
 
   .lottie-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-}
 
 .lottie-button {
   flex: 1;
