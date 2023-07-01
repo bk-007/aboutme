@@ -42,39 +42,53 @@ section {
   align-items: center;
 }
 
-.animation,
-.lottie-buttons {
-  display: block;
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
-.animation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+.profile-picture {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px; /* Set the desired size for the profile picture */
+  height: 50px;
+  background-color: transparent; /* Placeholder background color */
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .lottie-buttons {
   display: flex;
-  justify-content: flex-end; /* Align buttons to the right */
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px; /* Adjust the top margin as needed */
 }
 
 .lottie-button {
-  flex: 0 0 auto; /* Prevent buttons from growing */
+  /* Your button styles */
   margin: 10px;
   cursor: pointer;
-  width: 100px; /* Set desired width for desktop */
-  height: 40px; /* Set desired height for desktop */
+  width: 50px; /* Set the desired size for the buttons */
+  height: 50px;
 }
 
-/* Media query for mobile */
+/* Media query for screens smaller than 768px (mobile) */
 @media (max-width: 767px) {
+  .profile-picture {
+    top: 5px; /* Adjust the top position for mobile */
+    width: 40px; /* Adjust the size for mobile */
+    height: 40px;
+  }
+
+  .lottie-buttons {
+    margin-top: 50px; /* Adjust the top margin for mobile */
+  }
+
   .lottie-button {
-    width: 80px; /* Set desired width for mobile */
-    height: 40px; /* Set desired height for mobile */
+    width: 40px; /* Adjust the button size for mobile */
+    height: 40px;
   }
 }
