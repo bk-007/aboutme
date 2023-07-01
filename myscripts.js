@@ -7,15 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
   // Show the loader
   function showLoader() {
     loader.style.display = "flex";
-    animation.style.display = "none";
     buttons.style.display = "none";
   }
 
-  // Hide the loader and show the animation and buttons
+  // Hide the loader and show the buttons
   function hideLoader() {
     loader.style.display = "none";
-    animation.style.display = "block";
-    buttons.style.display = "block";
+    buttons.style.display = "flex";
   }
 
   // Simulate a loading delay (you can replace this with your own loading logic)
@@ -25,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Simulate loading delay (e.g., 3 seconds)
     setTimeout(function() {
-      // Hide the loader and show the animation and buttons after the delay
+      // Hide the loader and show the buttons after the delay
       hideLoader();
     }, 3000); // Adjust the delay time as needed
   }
