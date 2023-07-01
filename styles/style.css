@@ -60,17 +60,18 @@ section {
 }
 
 /* Load the appropriate Lottie animation based on screen size */
+/* CSS styles for both phones and desktops */
+.animation #background-animation {
+  background: url('json/desktop-background.json') center center / cover no-repeat;
+}
+
+/* Media query for phones */
 @media (max-width: 767px) {
   .animation #background-animation {
-    background: url('https://github.com/bk-007/aboutme/blob/883aca5880f30323afd8cc07a30cadd46934c193/json/mobile-background.json') center center / cover no-repeat;
+    background: url('json/mobile-background.json') center center / cover no-repeat;
   }
 }
 
-@media (min-width: 768px) {
-  .animation #background-animation {
-    background: url('https://github.com/bk-007/aboutme/blob/883aca5880f30323afd8cc07a30cadd46934c193/json/desktop-background.json') center center / cover no-repeat;
-  }
-}
 
   .lottie-buttons {
     display: flex;

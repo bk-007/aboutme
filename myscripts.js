@@ -57,3 +57,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+// Get the background animation element
+var backgroundAnimation = document.getElementById("background-animation");
+
+// Function to update the src attribute of the background animation
+function updateBackgroundAnimationSrc() {
+  if (window.innerWidth <= 767) {
+    backgroundAnimation.setAttribute("src", "json/mobile-background.json");
+  } else {
+    backgroundAnimation.setAttribute("src", "json/desktop-background.json");
+  }
+}
+
+// Call the function initially to set the initial src based on the current screen size
+updateBackgroundAnimationSrc();
+
+// Listen for window resize events and update the src attribute accordingly
+window.addEventListener("resize", updateBackgroundAnimationSrc);
+
