@@ -61,13 +61,13 @@ section {
 
 /* Load the appropriate Lottie animation based on screen size */
 @media (max-width: 767px) {
-  .animation lottie-player {
+  .animation #background-animation {
     background: url('json/mobile-background.json') center center / cover no-repeat;
   }
 }
 
 @media (min-width: 768px) {
-  .animation lottie-player {
+  .animation #background-animation {
     background: url('json/desktop-background.json') center center / cover no-repeat;
   }
 }
