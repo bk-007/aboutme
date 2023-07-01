@@ -41,8 +41,6 @@ section {
 
 .avatar1 {
   position: relative;
-  width: 12vw; /* Adjust the size of the avatar for desktop */
-  height: 12vh;
   margin-top: 20px; /* Add some top margin to separate avatar from buttons */
   z-index: 2; /* Position avatar above buttons */
 }
@@ -64,8 +62,6 @@ section {
 /* Media query for screens smaller than 768px (mobile) */
 @media (max-width: 767px) {
   .avatar1 {
-    width: 8vw; /* Adjust the size of the avatar for mobile */
-    height: 8vh;
     margin-top: 20px; /* Adjust the top margin for mobile */
   }
 
