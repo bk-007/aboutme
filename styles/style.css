@@ -1,10 +1,11 @@
 /* Common styles for both phones and desktops */
 html {
   scroll-behavior: initial;
+  box-sizing: border-box;
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html,
@@ -13,76 +14,40 @@ body {
   padding: 0;
 }
 
-/* Styles for phones */
-@media (max-width: 767px) {
-  html,
-  body {
-    height: auto;
-    min-height: 100vh;
-    display: block;
-  }
-
-  section {
-    font-size: initial;
-    -webkit-text-size-adjust: initial;
-  }
-
-  .loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .animation,
-  .lottie-buttons {
-    display: none;
-  }
-
-  .lottie-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .lottie-button {
-    flex: 1;
-    margin: 10px;
-    cursor: pointer;
-  }
+/* Styles for phones and desktops */
+html,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Styles for desktops */
+section {
+  height: 100%;
+  width: 100%;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation,
+.lottie-buttons {
+  display: none;
+}
+
 @media (min-width: 768px) {
-  html,
-  body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  section {
-    height: 100%;
-    width: 100%;
-  }
-
-  .loader {
-    display: none;
-  }
-
-  .animation,
-  .lottie-buttons {
-    display: none;
-  }
-
   .animation {
     position: fixed;
     top: 0;
@@ -97,10 +62,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
-  .lottie-button {
-    flex: 1;
-    margin: 10px;
-    cursor: pointer;
-  }
+}
+
+.lottie-button {
+  flex: 1;
+  margin: 10px;
+  cursor: pointer;
 }
