@@ -1,3 +1,4 @@
+/* Common styles for both phones and desktops */
 html {
   scroll-behavior: initial;
 }
@@ -9,26 +10,45 @@ html {
 html,
 body {
   margin: 0;
-  height:100vh;
-  width:100vw;
-  min-height: 100vh;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: auto;
-  position: relative;
-}
-
-section {
-  height:100%;
-  width: 100%;
-  font-size: auto;
-  -webkit-text-size-adjust: auto;
   padding: 0;
 }
 
-.buttons {
-  position: top;
+/* Styles for phones */
+@media (max-width: 767px) {
+  html,
+  body {
+    height: auto;
+    min-height: 100vh;
+    display: block;
+  }
+  
+  section {
+    font-size: initial;
+    -webkit-text-size-adjust: initial;
+  }
+
+  .buttons {
+    position: static;
+  }
+}
+
+/* Styles for desktops */
+@media (min-width: 768px) {
+  html,
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    height: 100%;
+    width: 100%;
+  }
+
+  .buttons {
+    position: top;
+  }
 }
