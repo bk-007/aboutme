@@ -5,6 +5,8 @@
 
   <link rel="stylesheet" href="styles\style.css">
 
+  <script src="myscripts.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <link rel="stylesheet" media="(prefers-color-scheme:light)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css">
@@ -84,40 +86,6 @@
         });
       });
     </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Select the loader and animation elements
-    var loader = document.querySelector(".loader");
-    var animation = document.querySelector(".animation");
-
-    // Show the loader
-    function showLoader() {
-      loader.style.display = "flex";
-    }
-
-    // Hide the loader and show the animation
-    function hideLoader() {
-      loader.style.display = "none";
-      animation.style.display = "block";
-    }
-
-    // Simulate a loading delay (you can replace this with your own loading logic)
-    function simulateLoading() {
-      // Show the loader immediately
-      showLoader();
-
-      // Simulate loading delay (e.g., 3 seconds)
-      setTimeout(function() {
-        // Hide the loader and show the animation after the delay
-        hideLoader();
-      }, 3000); // Adjust the delay time as needed
-    }
-
-    // Call the simulateLoading function to start the loading process
-    simulateLoading();
-  });
-</script>
 
   </body>
   
