@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add click event listener to navigate to the specified link on button click
     button.addEventListener("click", function() {
-      window.location.href = link;
+      window.open(link, "_blank");
     });
   });
 });
