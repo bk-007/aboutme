@@ -47,7 +47,6 @@ section {
   display: block;
 }
 
-/* Set the background animation */
 .animation {
   position: fixed;
   top: 0;
@@ -58,20 +57,6 @@ section {
   width: 100%;
   height: 100%;
 }
-
-/* Load the appropriate Lottie animation based on screen size */
-/* CSS styles for both phones and desktops */
-.animation #background-animation {
-  background: url('json/desktop-background.json') center center / cover no-repeat;
-}
-
-/* Media query for phones */
-@media (max-width: 767px) {
-  .animation #background-animation {
-    background: url('json/mobile-background.json') center center / cover no-repeat;
-  }
-}
-
 
   .lottie-buttons {
     display: flex;

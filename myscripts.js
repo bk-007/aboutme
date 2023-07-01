@@ -1,42 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Select the loader and animation elements
   var loader = document.querySelector(".loader");
   var animation = document.querySelector(".animation");
   var buttons = document.querySelector(".lottie-buttons");
 
-  // Show the loader
   function showLoader() {
     loader.style.display = "flex";
     animation.style.display = "none";
     buttons.style.display = "none";
   }
 
-  // Hide the loader and show the animation and buttons
   function hideLoader() {
     loader.style.display = "none";
     animation.style.display = "block";
     buttons.style.display = "block";
   }
 
-  // Simulate a loading delay (you can replace this with your own loading logic)
   function simulateLoading() {
-    // Show the loader immediately
     showLoader();
-
-    // Simulate loading delay (e.g., 3 seconds)
     setTimeout(function() {
-      // Hide the loader and show the animation and buttons after the delay
       hideLoader();
-    }, 3000); // Adjust the delay time as needed
+    }, 3000);
   }
 
-  // Call the simulateLoading function to start the loading process
   simulateLoading();
 });
 
-// lottie buttons clickable
 document.addEventListener("DOMContentLoaded", function() {
-  // Set up Lottie animations for each button
   var lottieButtons = document.querySelectorAll(".lottie-button");
 
   lottieButtons.forEach(function(button) {
@@ -50,29 +39,36 @@ document.addEventListener("DOMContentLoaded", function() {
       autoplay: true,
       path: "json/" + animationId + ".json"
     });
-
-    // Add click event listener to navigate to the specified link on button click
-    button.addEventListener("click", function() {
-      window.location.href = link;
-    });
   });
-});
 
-// Get the background animation element
-var backgroundAnimation = document.getElementById("background-animation");
+  var container = document.getElementById("animation-container");
 
-// Function to update the src attribute of the background animation
-function updateBackgroundAnimationSrc() {
-  if (window.innerWidth <= 767) {
-    backgroundAnimation.setAttribute("src", "json/mobile-background.json");
-  } else {
-    backgroundAnimation.setAttribute("src", "json/desktop-background.json");
+  function createLottiePlayer(src) {
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+
+    var lottiePlayer = document.createElement("lottie-player");
+    lottiePlayer.setAttribute("id", "background-animation");
+    lottiePlayer.setAttribute("background", "transparent");
+    lottiePlayer.setAttribute("speed", "1");
+    lottiePlayer.setAttribute("style", "width: 100%; height: 100%;");
+    lottiePlayer.setAttribute("loop", "");
+    lottiePlayer.setAttribute("autoplay", "");
+    lottiePlayer.setAttribute("src", src);
+
+    container.appendChild(lottiePlayer);
   }
-}
 
-// Call the function initially to set the initial src based on the current screen size
-updateBackgroundAnimationSrc();
+  function updateBackgroundAnimation() {
+    if (window.innerWidth <= 767) {
+      createLottiePlayer("json/mobile-background.json");
+    } else {
+      createLottiePlayer("json/desktop-background.json");
+    }
+  }
 
-// Listen for window resize events and update the src attribute accordingly
-window.addEventListener("resize", updateBackgroundAnimationSrc);
+  updateBackgroundAnimation();
 
+  window.addEventListener("resize", updateBackgroundAnimation);
+});
