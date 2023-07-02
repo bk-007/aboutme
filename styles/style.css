@@ -23,18 +23,19 @@ body {
   justify-content: flex-start; /* Align section to the top */
   align-items: center;
 }
-.background {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -1; /* Push the background behind the section */
-  background-color: #ffffff; /* Set your desired background color */
-}
 
 section {
   width: 100%;
   padding-top: 20px; /* Add some top padding to the section */
   display: grid;
+}
+
+h1 {
+  font-size: medium;
+}
+
+h3 {
+  font-size: small;
 }
 
 .lottie-buttons {
