@@ -24,18 +24,18 @@ body {
   align-items: center;
 }
 
+h1 {
+  font-size: larger;
+}
+
+h3 {
+  font-size: large;
+}
+
 section {
   width: 100%;
   padding-top: 20px; /* Add some top padding to the section */
   display: grid;
-}
-
-h1 {
-  font-size: medium;
-}
-
-h3 {
-  font-size: small;
 }
 
 .lottie-buttons {
@@ -62,5 +62,13 @@ h3 {
   .lottie-button {
     width: 5vw; /* Adjust the size of the buttons for mobile */
     height: 5vh;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+  
+  h3 {
+    font-size: small;
   }
 }
