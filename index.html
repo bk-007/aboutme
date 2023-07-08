@@ -32,11 +32,9 @@
 
 </head>
 <body>
-  <div id="loader"></div>
+  <div id="background" class="hero-image"></div>
 
-  <div id="background" class="w-screen h-screen"></div>
-
-  <section class="container mx-auto py-8">
+  <section id="content" class="container content hidden">
     <h1 class="text-3xl font-bold">Hello!</h1>
     <p class="mt-4">Hey this is Bryce, nice to meet you! This is a small project so I can learn programming and some ai.</p>
     <div class="flex justify-center mt-8">
@@ -52,7 +50,7 @@
   <script>
     // Load and set the Lottie animation as the loader
     const loaderContainer = document.getElementById("loader");
-    const loaderData = "json/loader.json";
+    const loaderData = "json/loader-animation.json";
     const loaderAnimation = bodymovin.loadAnimation({
       container: loaderContainer,
       renderer: "svg",
@@ -71,7 +69,18 @@
       .catch(error => {
         console.error("Failed to fetch image:", error);
       });
+
+    // Hide the loader and show the content after 2 seconds
+    setTimeout(() => {
+      const loaderElement = document.getElementById("loader");
+      const contentElement = document.getElementById("content");
+
+      loaderElement.classList.add("hidden");
+      contentElement.classList.remove("hidden");
+    }, 2000);
   </script>
 </body>
+
+
 
 </html>

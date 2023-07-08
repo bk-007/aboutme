@@ -1,18 +1,5 @@
-
-  /* Define the base font size for responsive scaling */
-  html {
-    font-size: 7vw;
-  }
-
-  /* Define responsive text sizes */
-  @media (max-width: 640px) {
-    html {
-      font-size: 5vw;
-    }
-  }
-
-  /* Center the container section */
-  .container {
+/* Center the container section */
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,26 +7,26 @@
     height: 100%;
     text-align: center;
   }
-
+  
   /* Style the heading */
   .text-3xl {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
   }
-
+  
   /* Style the paragraph */
   .mt-4 {
     margin-top: 1rem;
   }
-
+  
   /* Style the social media icons */
   .icon {
     width: 5rem;
     height: 5rem;
     margin-right: 1.5rem;
   }
-
+  
   /* Adjust icon size for smaller screens */
   @media (max-width: 640px) {
     .icon {
@@ -47,3 +34,21 @@
       height: 3rem;
     }
   }
+  
+  /* Style the hero image section */
+  .hero-image {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Style the content section */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
