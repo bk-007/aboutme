@@ -32,6 +32,8 @@
 
 </head>
 <body>
+  <div id="loader"></div>
+
   <div id="background" class="w-screen h-screen"></div>
 
   <section class="container mx-auto py-8">
@@ -43,20 +45,33 @@
         <img class="icon w-8 h-8 mr-4" src="images/instagram.svg" alt="instagram">
         <img class="icon w-8 h-8 mr-4" src="images/linkedin.svg" alt="LinkedIn">
       </div>
+    </div>
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
   <script>
-    // Load and set the Lottie animation as the background
-    const animationContainer = document.getElementById("background");
-    const animationData = "json/background-sparkle.json";
-    const animation = bodymovin.loadAnimation({
-      container: animationContainer,
+    // Load and set the Lottie animation as the loader
+    const loaderContainer = document.getElementById("loader");
+    const loaderData = "json/loader.json";
+    const loaderAnimation = bodymovin.loadAnimation({
+      container: loaderContainer,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      path: animationData
+      path: loaderData
     });
+
+    // Fetch a random image from Unsplash and set it as the background
+    fetch("https://source.unsplash.com/random")
+      .then(response => {
+        const imageUrl = response.url;
+        const backgroundElement = document.getElementById("background");
+        backgroundElement.style.backgroundImage = `url('${imageUrl}')`;
+      })
+      .catch(error => {
+        console.error("Failed to fetch image:", error);
+      });
   </script>
 </body>
+
 </html>
