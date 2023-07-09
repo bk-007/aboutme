@@ -7,6 +7,7 @@
   <title>Bryce K</title>
   <link rel="manifest" href="site.webmanifest">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.1.0/Vibrant.min.js"></script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -41,9 +42,15 @@
     <p class="mt-4">Hey this is Bryce, nice to meet you! This is a small project so I can learn programming and some AI.</p>
     <div class="flex justify-center mt-8">
       <div class="flex justify-center mt-8">
-        <img class="icon w-8 h-8 mr-4" src="images/github.svg" alt="GitHub">
-        <img class="icon w-8 h-8 mr-4" src="images/instagram.svg" alt="instagram">
-        <img class="icon w-8 h-8 mr-4" src="images/linkedin.svg" alt="LinkedIn">
+        <a href="https://github.com/bk-007">
+          <img class="icon w-8 h-8 mr-4" src="images/github.svg" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/guaconallthethings/">
+          <img class="icon w-8 h-8 mr-4" src="images/instagram.svg" alt="instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/brycek/">
+          <img class="icon w-8 h-8 mr-4" src="images/linkedin.svg" alt="LinkedIn">
+        </a>
       </div>
     </div>
   </section>
@@ -67,6 +74,23 @@
         const imageUrl = response.url;
         const backgroundElement = document.getElementById("background");
         backgroundElement.style.backgroundImage = `url('${imageUrl}')`;
+
+        // Get the dominant color of the background image
+        const img = new Image();
+        img.crossOrigin = "Anonymous";
+        img.src = imageUrl;
+
+        img.onload = function() {
+          const vibrant = new Vibrant(img);
+          const swatches = vibrant.swatches();
+
+          // Check if a vibrant color is available
+          if (swatches && swatches.Vibrant) {
+            const vibrantColor = swatches.Vibrant.getHex();
+            const contentElement = document.getElementById("content");
+            contentElement.style.color = vibrantColor;
+          }
+        };
       })
       .catch(error => {
         console.error("Failed to fetch image:", error);
@@ -82,8 +106,5 @@
     }, 2000);
   </script>
 </body>
-
-
-
 
 </html>
