@@ -34,8 +34,8 @@
 
 </head>
 <body>
-  <!-- Jumbotron -->
-<div class="h-screen bg-cover bg-no-repeat p-12 text-center" style="background-image: url('https://res.cloudinary.com/dlo6pjmqi/image/upload/v1675741885/beach_003876392jd.jpg');">
+ <!-- Jumbotron -->
+<div id="jumbotron" class="h-screen bg-cover bg-no-repeat p-12 text-center">
   <div class="flex flex-col h-full items-center justify-center">
     <div class="text-white">
       <h2 class="mb-4 text-6xl font-semibold">Welcome</h2>
@@ -77,6 +77,20 @@
       >❤️ by Bryce</a
     >
 </footer>
+
+<script>
+  // Fetch the Bing image of the day
+  fetch('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US')
+    .then(response => response.json())
+    .then(data => {
+      const imageUrl = `https://www.bing.com${data.images[0].url}`;
+      document.getElementById('jumbotron').style.backgroundImage = `url('${imageUrl}')`;
+    })
+    .catch(error => {
+      console.error('Error fetching Bing image:', error);
+    });
+</script>
+
 
 </body>
 
