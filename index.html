@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles\style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bryce K</title>
@@ -33,86 +33,51 @@
 
 </head>
 <body>
-  <div id="loader" class="loader"></div>
-
-  <div id="background" class="hero-image"></div>
-
-  <section id="content" class="container content hidden">
+  <section id="content" class="container content">
     <div class="text-section">
-      <h1 class="text-3xl font-bold">Hello!</h1>
-      <p class="mt-4">Hey, this is Bryce. Nice to meet you! This is a small project so I can learn programming and some AI.</p>
+      <h1 class="text-5xl font-bold">Hello!</h1>
+      <p class="mt-4 text-xl">Hey, this is Bryce. Nice to meet you! This is a small project so I can learn programming and some AI.</p>
     </div>
 
     <div class="icon-section">
       <div class="flex justify-center mt-8">
         <a href="https://github.com/bk-007">
-          <img class="icon w-8 h-8 mr-4" src="images/github.svg" alt="GitHub">
+          <img class="icon w-12 h-12 mr-4" src="images/github.svg" alt="GitHub">
         </a>
         <a href="https://www.instagram.com/guaconallthethings/">
-          <img class="icon w-8 h-8 mr-4" src="images/instagram.svg" alt="instagram">
+          <img class="icon w-12 h-12 mr-4" src="images/instagram.svg" alt="instagram">
         </a>
         <a href="https://www.linkedin.com/in/brycek/">
-          <img class="icon w-8 h-8 mr-4" src="images/linkedin.svg" alt="LinkedIn">
+          <img class="icon w-12 h-12 mr-4" src="images/linkedin.svg" alt="LinkedIn">
         </a>
       </div>
     </div>
 
     <footer class="footer">
-      <p>Made with ❤️ by Bryce and 🤖</p>
+      <p>Made with ❤️ by Bryce</p>
     </footer>
   </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
   <script>
-    // Load and set the Lottie animation as the loader
-    const loaderContainer = document.getElementById("loader");
-    const loaderData = "json/loader-animation.json";
-    const loaderAnimation = bodymovin.loadAnimation({
-      container: loaderContainer,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      path: loaderData
+    // Randomly change the color of the text when the site is loaded
+    window.addEventListener("DOMContentLoaded", () => {
+      const textElement = document.querySelector(".text-section");
+      const randomColor = getRandomColor();
+      textElement.style.color = randomColor;
     });
 
-    // Fetch a random image from Unsplash and set it as the background
-    fetch("https://source.unsplash.com/random")
-      .then(response => {
-        const imageUrl = response.url;
-        const backgroundElement = document.getElementById("background");
-        backgroundElement.style.backgroundImage = `url('${imageUrl}')`;
-
-        // Get the dominant color of the background image
-        const img = new Image();
-        img.crossOrigin = "Anonymous";
-        img.src = imageUrl;
-
-        img.onload = function() {
-          const vibrant = new Vibrant(img);
-          const swatches = vibrant.swatches();
-
-          // Check if a vibrant color is available
-          if (swatches && swatches.Vibrant) {
-            const vibrantColor = swatches.Vibrant.getHex();
-            const contentElement = document.getElementById("content");
-            contentElement.style.color = vibrantColor;
-          }
-        };
-      })
-      .catch(error => {
-        console.error("Failed to fetch image:", error);
-      });
-
-    // Hide the loader and show the content after 2 seconds
-    setTimeout(() => {
-      const loaderElement = document.getElementById("loader");
-      const contentElement = document.getElementById("content");
-
-      loaderElement.classList.add("hidden");
-      contentElement.classList.remove("hidden");
-    }, 2000);
+    // Generate a random color
+    function getRandomColor() {
+      const letters = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
   </script>
 </body>
+
 
 
 </html>
