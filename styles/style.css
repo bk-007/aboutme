@@ -1,37 +1,33 @@
 /* Style the hero image section */
 .hero-image {
     position: relative;
-    height: 100vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     z-index: -1;
   }
 
-.container {
-    position: relative;
-  }
-  
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .text-section {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     padding: 2rem;
   }
   
+  .icon-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  
   .text-3xl {
-    font-size: 4rem; /* Increase the font size for the heading */
+    font-size: 3rem;
   }
   
   .icon {
-    width: 4rem; /* Increase the size of the icons */
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
   }
-  
-  /* Additional styles for improved readability */
-  .container {
-    z-index: 1; /* Ensure the content is above the background image */
-  }
-  
