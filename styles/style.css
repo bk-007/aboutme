@@ -1,54 +1,37 @@
-/* Center the container section */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
-  }
-  
-  /* Style the heading */
-  .text-3xl {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  /* Style the paragraph */
-  .mt-4 {
-    margin-top: 1rem;
-  }
-  
-  /* Style the social media icons */
-  .icon {
-    width: 5rem;
-    height: 5rem;
-    margin-right: 1.5rem;
-  }
-  
-  /* Adjust icon size for smaller screens */
-  @media (max-width: 640px) {
-    .icon {
-      width: 3rem;
-      height: 3rem;
-    }
-  }
-  
-  /* Style the hero image section */
-  .hero-image {
+/* Style the hero image section */
+.hero-image {
     position: relative;
     height: 100vh;
     background-size: cover;
     background-position: center;
     z-index: -1;
   }
+
+.container {
+    position: relative;
+  }
   
-  /* Style the content section */
   .content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 2rem;
+  }
+  
+  .text-3xl {
+    font-size: 4rem; /* Increase the font size for the heading */
+  }
+  
+  .icon {
+    width: 4rem; /* Increase the size of the icons */
+    height: 4rem;
+  }
+  
+  /* Additional styles for improved readability */
+  .container {
+    z-index: 1; /* Ensure the content is above the background image */
   }
   
