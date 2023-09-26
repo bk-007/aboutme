@@ -1,21 +1,87 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"></html>
-  
-  <head>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="js/scripts.js">
+  <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryce K</title>
+  <link rel="manifest" href="site.webmanifest">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.1.0/Vibrant.min.js"></script>
 
-  <link rel="stylesheet" href="styles\style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brycek.me/">
+  <meta property="og:title" content="A Site by Bryce">
+  <meta property="og:description" content="Welcome to my first site. Check it out!">
+  <meta property="og:image:type" content="image/gif"/>
+  <meta property="og:image" content="https://res.cloudinary.com/dlo6pjmqi/image/upload/v1685597210/animation_500_licp1qfh_qwm6a4.gif">
 
-  <link rel="stylesheet" media="(prefers-color-scheme:light)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://brycek.me/">
+  <meta property="twitter:title" content="A Site by Bryce">
+  <meta property="twitter:description" content="Welcome to my first site. Check it out!">
+  <meta property="twitter:image" content="https://res.cloudinary.com/dlo6pjmqi/image/upload/v1685597210/animation_500_licp1qfh_qwm6a4.gif">
 
-  <link rel="stylesheet" media="(prefers-color-scheme:dark)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/dark.css" onload="document.documentElement.classList.add('sl-theme-dark');">
+</head>
+</head>
+<body>
+  <div class="hero">
+    <h1>From Bryce</h1>
+    <p>A website with a whole lot of nothing.</p>
+    <div class="scroll-indicator"></div>
+  </div>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js"></script>
+  <div class="buttons">
+    <a href="https://github.com/bk-007" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="images/github.svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 5v-3.5c0-1.4-.8-2.6-2-3.2.1-.4.8-2.1-.2-4.4 0 0-1.4-.4-4.5 1.7-1.3-.4-2.7-.6-4.1-.6s-2.8.2-4.1.6c-3.1-2.1-4.5-1.7-4.5-1.7-.9 2.3-.3 4-.2 4.4-1.2.6-2 1.8-2 3.2V21" />
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/guaconallthethings/" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="images/instagram.svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 2H10a4 4 0 0 0-4 4v4a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 11h4m0 0v4m0-4h-4m0 0l-1-1m1 1l1-1" />
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/brycek/" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="images/linkedin.svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3c1.5 0 2.8.5 3.8 1.4S10 7 10 8.5V15" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9v6a2 2 0 0 1-2 2h-3m-4 0H7a2 2 0 0 1-2-2V9m14 0v6m0-6h-3m-4 0H7m3-9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+      </svg>
+    </a>
+  </div>
 
-    <script src="https://kit.fontawesome.com/88a2056623.js" crossorigin="anonymous"></script>
+  <footer class="footer">
+    <p>From Bryce, with ❤️</p>
+  </footer>
+
+  <script>
+    // Add your custom JavaScript here
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    const root = document.documentElement;
+    root.style.setProperty('--bg-color', prefersDarkMode ? '#000' : '#f2f2f2');
+    root.style.setProperty('--text-color', prefersDarkMode ? '#fff' : '#000');
+
+    window.addEventListener('scroll', function() {
+      const scrollIndicator = document.querySelector('.scroll-indicator');
+      scrollIndicator.style.opacity = 1 - window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+    });
+  </script>
+</body>
 
 
+<<<<<<< HEAD
 
   <!-- Primary Meta Tags -->
 
@@ -81,4 +147,6 @@
               </script>
     </body>
   
+=======
+>>>>>>> d88cd498645ee01594ccb95630495fed3500b231
 </html>
